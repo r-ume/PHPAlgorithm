@@ -1,13 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: RyosukeUmeki
- * Date: 2017/02/04
- * Time: 15:16
- */
-
-//文字の連続する数を使って、基本的な文字列圧縮をするプログラムを実装してください
-// aabcccccaaa
 
 $str = 'aabcccaaa';
 $result = '';

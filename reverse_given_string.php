@@ -1,9 +1,8 @@
 <?php
 
-// 文字列を逆に並び替える関数を実装しなさい。
+// reverse the order of letters of given string。
 
-
-$str = 'ryosukeumeki';
+$str = 'banana';
 $result = '';
 
 function reverse_string($str) {
