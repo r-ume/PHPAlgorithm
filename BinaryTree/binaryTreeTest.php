@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: RyosukeUmeki
- * Date: 2017/02/10
- * Time: 21:13
- */
 
-require_once './../part/TreeNode.php';
-require_once './../part/BinaryTree.php';
+require_once 'TreeNode.php';
+require_once 'BinaryTree.php';
 
 $tree = new TreeNode();
 $tree->value = 1000;
