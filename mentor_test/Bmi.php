@@ -18,7 +18,6 @@ class Bmi {
 		echo "体重を入力してください : 単位(kg) \n";
 		$weight = trim(fgets(STDIN));
 		
-		# インスタンスを生成
 		$bmi = new Bmi($name, $height, $weight);
 		Bmi::$bmis[] = $bmi;
 	}
@@ -29,8 +28,9 @@ class Bmi {
 
 		foreach(Bmi::$bmis as $bmi){
 
-			$result = $this->calculateBmi($bmi->weight, $bmi->height);  # BMIの計算
-		
+			$result = intval($bmi->weight / (($bmi->height / 100)**2));
+			//$result = $this->calculateBmi($bmi->weight, $bmi->height);
+
 			if ($result >= 40) echo "肥満(4度)\n";
 			if ($result >= 35) echo "肥満(3度)\n";
 			if ($result >= 30) echo "肥満(2度)\n";
@@ -42,20 +42,17 @@ class Bmi {
         echo $line;
 	}
 
+	// good thing to learn -> this calculateBmi function cannot get called in show_result function because show_result is static
 	private function calculateBmi($weight, $height){
 		return intval($weight / (($height / 100)**2));
 	}
 
 }
 
-# 以下実行部分
-echo "[0]:データを入力する\n";
-echo "[1]:BMIの結果を見る\n";
-echo "[2]:終了する\n";
-
-# [0],[1],[2]をループさせる
-
 while(true){
+	echo "[0]:データを入力する\n";
+	echo "[1]:BMIの結果を見る\n";
+	echo "[2]:終了する\n";
 
 	$input = intval(fgets(STDIN));
 	
@@ -69,5 +66,3 @@ while(true){
 		exit;
 	}
 }
-
-
