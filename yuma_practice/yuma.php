@@ -1,3 +1,3 @@
 <?php
 
-echo "yuma";
+echo "yuma kodama";
