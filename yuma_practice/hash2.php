@@ -1,7 +1,7 @@
 <?php
 
 $waseda = [];
-$waseda["department"]["jinka"] = 'yuma';
+$waseda["department"]["bunkou"] = 'yuma';
 
 $waseda["department"]["sils"] = 'ryo';
 
