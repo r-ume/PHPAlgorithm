@@ -1,0 +1,19 @@
+現在注目している技術を2つあげ、その理由を教えてください。
+
+- Go言語
+	- 並列処理が可能
+	- HTTP/URL処理/ソケット/暗号化/日付 & タイムスタンプの処理/データ圧縮など、web開発に適した標準ライブラリが揃っている
+	
+
+- JavaScript全般
+	- 2016 Average Developer Salaryによると、一番求人が高い言語
+	- 広く使われている
+		- 会社の共有資料で使われるGoogle docsやspreadsheetの自動化の開発で使われるGoogle Apps Script
+		- サーバーのプロビショニングを行うAWS lambda, 
+		- サーバーサイド開発言語のNode.js, 
+		- WebフロントのフレームワークのReact.js, AngularJS, vue.jsは、全てJavaScriptで実装されている。
+		- Facebook社が開発したReact Nativeというフレームワークにより、iOSとAndroidアプリケーションのフロント(UIデザイン)まで開発できる
+
+	自分がJavaScriptに注目している主な理由がvue.jsのフレームワークとReact Nativeである。
+
+
